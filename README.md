@@ -5,13 +5,13 @@
 
 # RC_CAR
 
-This project was created as a programming exercise for Python. Originally, my wife wanted to learn programming, so I designed this project for her. It combines many aspects from the STEM/Maker world: electronics, programming, laser-cutting, soldering, 3D printing, and more. The result is not only educational, but also fun for kids!
+This project was created as a programming exercise for Python. Originally, my wife wanted to learn programming, so I designed this project for her. It combines many basic skills from the STEM/Maker world: electronics, programming, laser-cutting, soldering, 3D printing, communicaton and more. The result is not only educational, but also fun for kids!
 
 With this project, my wife learned Python by controlling the RC car. The sender/receiver modules (in C++) were provided by me and do not need to be changed. The idea was that she could control the RC car using Python, while the C++ sender/receiver handle the communication and hardware control.
 
 ## RC Car Model
 
-This project is based on the following 3D-printed RC car from Thingiverse: [https://www.thingiverse.com/thing:3685946](https://www.thingiverse.com/thing:3685946)
+The Car is based on the following 3D-printed RC car from Thingiverse: [https://www.thingiverse.com/thing:3685946](https://www.thingiverse.com/thing:3685946)
 
 
 ## Project Structure
@@ -47,7 +47,7 @@ This project is based on the following 3D-printed RC car from Thingiverse: [http
 - The Sender forwards these commands wirelessly (ESP-NOW) to the ESP32 Receiver.
 - The Receiver processes the commands and controls the hardware: steering servo, motor ESC, and LED on the RC car.
 
-Below is a simple schematic showing how the main components interact:
+Schematic:
 
 ![RC Car Schematic](media/rc_car_schematic.png)
 
@@ -89,9 +89,8 @@ Below is a simple schematic showing how the main components interact:
 - The `test` directories are intended for unit tests with PlatformIO.
 
 
-
 ## Notes
 
 - Communication is handled via ESP-NOW (fast, no WiFi required).
-- Die Hardware-Pins für Servo und ESC sind im Code definiert (z.B. Pin 27 für Servo, Pin 25 für ESC).
-- Timeout-Mechanismus im Empfänger: Setzt ESC auf Neutral, wenn keine Befehle empfangen werden.
+- The hardware pins for servo and ESC are defined in the code (e.g., pin 27 for servo, pin 25 for ESC)..
+- There is a Timeout mechanism in the receiver (Car): Sets ESC to neutral if no commands are received..
