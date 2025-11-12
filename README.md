@@ -49,7 +49,7 @@ This project is based on the following 3D-printed RC car from Thingiverse: [http
 
 Below is a simple schematic showing how the main components interact:
 
-![RC Car Schematic](.media/rc_car_schematic.png)
+![RC Car Schematic](media/rc_car_schematic.png)
 
 ### Example JSON
 
