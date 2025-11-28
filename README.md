@@ -13,6 +13,12 @@ With this project, my wife learned Python by controlling the RC car. The sender/
 
 The Car is based on the following 3D-printed RC car from Thingiverse: [https://www.thingiverse.com/thing:3685946](https://www.thingiverse.com/thing:3685946)
 
+The original Steering-Solution is a littlebit clunky, so i add an new steering-rack design here: [stl_files/steering_rack_v2.stl](stl_files/steering_rack_v2.stl)
+It uses a long screw instead of a flexible wire, which improves steering precision significantly.
+Thera are also other Parts that have to improve, but the steering is the most important one.
+
+And use Loctite to fix the screws!
+Otherwise the car will fall apart after a few minutes of driving...
 
 ## Project Structure
 
